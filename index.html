@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root{
+            --main-color: black;
+            --alt-color: rgb(121, 104, 78);
+            --text-color: white;
+            --alt-text-color: red;
+        }
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .text{
+            text-align: center;
+            color: var(--text-color)
+        }
+        .header-text{
+            text-align: center;
+            color: var(--main-color)
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            position: sticky;
+            top: 0;
+            background-color: var(--main-color);
+            z-index: 1000;
+        }
+        .logo{
+            font-size: 2rem;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+        .nav-links{
+            display: flex;
+            gap: 50px;
+            list-style: none;
+        }
+        .nav-links a{
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: var(--text-color);
+            transform: rotateX(0deg) scale(1);
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        .nav-links a:hover{
+                transform: rotateX(10deg) scale(1.1);
+                color: var(--alt-text-color);
+        }
+        header{
+            background: linear-gradient(rgb(121, 104, 78), rgb(121, 104, 78));
+            padding: 4rem 2rem; 
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        #service{
+            background-color: #0f172a;
+            padding: 4rem 2rem; 
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            list-style: none;
+        }
+        #about{
+            background-color: #106a7a;
+            padding: 4rem 2rem; 
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        #contact{
+            background-color: #334155;
+            padding: 4rem 2rem; 
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;            
+        }
+        #payment{
+            background-color: #4ade80;
+            padding: 4rem 2rem; 
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;     
+        }
+        footer{
+            background-color: #070a12;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center; 
+        }
+        @media screen and (max-width: 768px) {
+            header{
+                flex-direction: row;
+            }
+            .navbar{
+                flex-direction: column;
+                padding: 1rem;
+            }
+            .nav-links a{
+                font-size: 1rem;
+            }
+            .logo{
+            font-size: 1.5rem;
+            }
+        }
+    </style>
+    <title>Web Development</title>
+</head>
+<body>
+    <section id="top"></section>
+    <nav class="navbar">
+        <a href="#top" class="logo">WebDevelopment</a>
+        <ul class="nav-links">
+            <li><a href="#top" class="active">Home</a></li>
+            <li><a href="#service" id="service-button">Service</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#payment">Payment</a></li>
+        </ul>
+    </nav>
+    <header>
+    <h1 class="header-text">Web Development.</h1>
+    <h2 class="text">We build now, you pay later</h2>
+    </header>
+    <main>
+       <section id="service">
+            <h1 class="text">Service</h1>
+            <h2 class="text">We could make many things  including: </h2>
+            <ul>
+                <h2 class="text">Menus</h2>
+                <h2 class="text">Portfolios</h2>
+                <h2 class="text">Forms</h2>
+                <h2 class="text">Marketing Pages</h2>
+            </ul>
+            <h2 class="text">Other things can also be requested and negotiated</h2>
+            <h2 class="text">It will usually take around 3 days to a week, However time can range based on the request</h2>
+        </section>
+        <section id="about">
+            <h1 class="text">About</h1>
+            <h2 class="text">Our buisness is ran by 2 13 year olds who wanted to make some money</h2>
+            <h2 class="text">This buisness was founded on 6/6/2026</h2>
+        </section>
+        <section id="contact">
+            <h1 class="text">Contact Us</h1>
+            <h2 class="text">You can contact us through email</h2>
+            <h2 class="text">you can email us <a href="mailto:nloomis2013@gmail.com">here</a></h2>
+            <h2 class="text">If the link does not work, email nloomis2013@gmail.com</h2>
+        </section>
+        <section id="payment">
+            <h1 class="header-text">Payment</h1>
+            <h2 class="header-text">Payment is decided after the website is finished</h2>
+            <h2 class="header-text">You can expect prices to be around $10 to $60</h2>
+            <h2 class="header-text">You can pay via Venmo, or some kind of in-person exchange</h2>
+        </section>
+    </main>
+    <footer>
+        <h3 class="text">WebDevelopment</h3>
+        <p class="text">High-quality web solutions built instantly. We build now, you pay later.</p>
+        <h4 class="text">Quick Links</h4>
+        <a href="#top">Home</a>
+        <a href="#service">Services</a>
+        <a href="#contact">Contact</a>
+        <p class="text">&copy; 2026 WebDevelopment. All rights reserved.</p>
+    </footer>
+</body>
+</html>
