@@ -14,6 +14,7 @@
             margin: 0;
             padding: 0;
             height: 100%;
+            background-color: rgb(218, 185, 185);
         }
         *{
             padding: 0;
@@ -70,6 +71,11 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            mask-image: linear-gradient(transparent, black 10%, black 90%, transparent);
+            transition: transform 0.5s ease;
+        }
+        header:hover{
+            transform: rotateX(10deg) scale(1.05);
         }
         #service{
             background-color: #0f172a;
@@ -81,6 +87,11 @@
             align-items: center;
             text-align: center;
             list-style: none;
+            mask-image: linear-gradient(transparent, black 10%, black 90%, transparent);
+            transition: transform 0.5s ease;
+        }
+        #service:hover{
+            transform: rotateX(10deg) scale(1.05);
         }
         #about{
             background-color: #106a7a;
@@ -91,6 +102,11 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            mask-image: linear-gradient(transparent, black 10%, black 90%, transparent);
+            transition: transform 0.5s ease;
+        }
+        #about:hover{
+            transform: rotateX(10deg) scale(1.05);
         }
         #contact{
             background-color: #334155;
@@ -100,7 +116,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;            
+            text-align: center;
+            mask-image: linear-gradient(transparent, black 10%, black 90%, transparent);
+            transition: transform 0.5s ease;           
+        }
+        #contact:hover{
+            transform: rotateX(10deg) scale(1.05);
         }
         #payment{
             background-color: #4ade80;
@@ -110,7 +131,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;     
+            text-align: center;
+            mask-image: linear-gradient(transparent, black 10%, black 90%, transparent);
+            transition: transform 0.5s ease;     
+        }
+        #payment:hover{
+            transform: rotateX(10deg) scale(1.05);
         }
         footer{
             background-color: #070a12;
@@ -129,14 +155,14 @@
                 padding: 0.5rem;
             }
             .nav-links a{
-                font-size: 1rem;
+                font-size: 0.7rem;
             }
             .logo{
                 font-size: 1.5rem;
             }
         }
     </style>
-    <title>dffasdfLoomisWebDesign</title>
+    <title>LoomisWebDesign</title>
 </head>
 <body>
     <section id="top"></section>
@@ -169,7 +195,7 @@
         </section>
         <section id="about">
             <h1 class="text">About</h1>
-            <h2 class="text">Our buisness is ran by 2 13 year olds who wanted to make some money</h2>
+            <h2 class="text">Our buisness is ran by a 13 year old who wanted to make some money</h2>
             <h2 class="text">This buisness was founded on 6/6/2026</h2>
         </section>
         <section id="contact">
@@ -182,7 +208,7 @@
             <h1 class="header-text">Payment</h1>
             <h2 class="header-text">Payment is decided after the website is finished</h2>
             <h2 class="header-text">You can expect prices to be around $10 to $60</h2>
-            <h2 class="header-text">You can pay via Venmo, or some kind of in-person exchange</h2>
+            <h2 class="header-text">Payment methods will be discussed</h2>
         </section>
     </main>
     <footer>
