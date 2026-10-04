@@ -39,6 +39,12 @@ body::after{
             box-shadow: 5px 5px 10px #33ff00;
             animation: glitch 0.3s linear infinite;
         }
+        .alttext{
+            color: #33ff00;
+            font-size: 3rem;
+            text-shadow: 0 0 5px #33ff00;
+            text-align: center;
+        }
         .cursor{
             display: inline-block;
             width: 10px;
@@ -74,6 +80,16 @@ body::after{
             text-align: center;
             animation: glitch 0.3s linear infinite;
         }
+        .container{
+            border: 3px solid;
+            border-color: #33ff00;
+            box-shadow: 5px 5px 10px #33ff00;
+            width: 99%;
+            height: 200px;
+            padding: 5px;
+            animation: glitch 0.3s linear infinite;
+        }
+
         @keyframes glitch{
             0%{transform: translate(0);}
             2%{transform: translate(-2px, -1px)}
