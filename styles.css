@@ -12,18 +12,18 @@ body{
 } 
 
 .text{ 
-    color:#e100ff; 
+    color:#3C8D0D; 
     display:flex; 
     justify-content: center; 
     align-items: center; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    text-shadow: 0px 0px 20px #e100ff; 
+    text-shadow: 0px 0px 20px ##D42426; 
 } 
 
 .textAnim{ 
-    color:#e100ff; 
+    color:##3C8D0D; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    text-shadow: 0px 0px 20px #e100ff; 
+    text-shadow: 0px 0px 20px #D42426; 
     animation-name: Slide; 
     animation-duration: 4s; 
     display: flex; 
@@ -32,19 +32,19 @@ body{
 } 
 
 .text2{ 
-    color: #e100ff; 
+    color: #3C8D0D; 
     display:flex; 
     justify-content: center; 
     align-items: center; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    text-shadow: 0px 0px 20px #000000; 
+    text-shadow: 0px 0px 20px #D42426; 
     animation-name: Slide; 
     animation-duration:4s; 
 } 
 
 a{ 
     text-decoration: none; 
-    color:#e100ff; 
+    color:##3C8D0D; 
 } 
 
 a:link, a:active{ 
@@ -55,7 +55,7 @@ img{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     width: 225px; 
     height: 120px; 
-    border-color: #e100ff; 
+    border-color: #3C8D0D; 
     border: 5px solid; 
     border-radius: 10px; 
     padding: 10px; 
