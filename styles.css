@@ -16,7 +16,7 @@ body {
 /* --- TWINKLING STRING LIGHTS --- */
 .christmas-lights {
   position: fixed;
-  top: -10px;
+  top: 5px; /* Brings the lights down inside the gold border */
   left: 0;
   width: 100%;
   padding: 0;
@@ -26,8 +26,9 @@ body {
   justify-content: space-around;
   pointer-events: none;
   z-index: 10000;
-  overflow: hidden;
+  /* overflow: hidden; removed so the glow isn't cut off */
 }
+
 
 .christmas-lights li {
   position: relative;
